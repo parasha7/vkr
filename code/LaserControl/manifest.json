@@ -1,0 +1,31 @@
+{
+  "id": "lasercontrol",
+  "name": "LaserControl",
+  "version": "0.1.0",
+  "description": "Дидактическое расширение mBlock 5 для управления лазерным гравером ACMER S1 через контроллер-посредник с GRBL.",
+  "author": "Шкаликов Никита Николаевич",
+  "main": "index.js",
+  "extensionType": "device",
+  "device": {
+    "type": "serial",
+    "baudRate": 115200,
+    "protocol": "json-newline",
+    "liveMode": true,
+    "uploadMode": false
+  },
+  "blocks": [
+    "connect",
+    "home",
+    "moveAbsolute",
+    "moveRelative",
+    "laser",
+    "power",
+    "feedrate",
+    "drawLine",
+    "drawRect",
+    "drawCircle",
+    "delay",
+    "emergencyStop",
+    "status"
+  ]
+}
